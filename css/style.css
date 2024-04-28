@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
 	font-family: "MuseoSansCyrl";
 	src: url("../fonts/MuseoSansCyrl.otf") format("opentype");
@@ -149,11 +153,11 @@ footer:after,
 
 
 .swiper-slide.relative.flex.flex-col.justify-end.swiper-slide-prev {
-	transform: scale(0.9) translateX(100px) !important
+	transform: scale(0.7) translateX(400px) !important
 }
 
 .swiper-slide.relative.flex.flex-col.justify-end.swiper-slide-next {
-	transform: scale(0.9) translateX(-100px) !important
+	transform: scale(0.7) translateX(-400px) !important
 }
 
 .swiper-slide .info {
@@ -232,4 +236,20 @@ footer:after,
 	font-size: 28px;
 	color: #FFF;
 	clear: both;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	border-radius: 50%;
+	border: 1px solid #ecc66b;
+	width: 48px !important;
+	height: 48px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+	transform: scale(0.5);
+	color: #ecc66b;
 }
